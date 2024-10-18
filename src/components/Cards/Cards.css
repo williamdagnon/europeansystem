@@ -1,0 +1,83 @@
+/* grid c1 */
+.grid-c1 {
+  display: flex;
+  flex-direction: column;
+}
+.grid-c1-content {
+  background: #000;
+  border-radius: 20px/20px;
+  width: 360px;
+  height: 220px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.grid-c1-content .lg-value {
+  
+  margin-top: 8px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+.grid-c1-content .expiry-text {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.grid-c1-content .card-wrapper {
+  display: flex;
+}
+.grid-c1-content .card-pin-hidden {
+  font-size: 32px;
+  margin-right: 8px;
+}
+.grid-c1-content span {
+  color: #fff;
+}
+.grid-c1 .card-logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-c1 .card-logo {
+  display: flex;
+  margin-right: 10px !important;
+  margin-top: -2px !important;
+}
+.grid-c1 .logo-shape1,
+.grid-c1 .logo-shape2 {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
+.grid-c1 .logo-shape1 {
+  
+  background-color: rgb(26, 233, 26);
+  width: 12px;
+  height: 12px;
+  margin-right: 10px !important;
+  margin-top: 16px;
+  animation: clignoter 1s infinite;
+}
+@keyframes clignoter {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.grid-c1 .logo-shape2 {
+  background-image: url(./src/assets/images/wifi.png);
+  border-radius: 0;
+ 
+}
+.cart{
+  display: inline-block;
+}
+.cart p{
+  font-size: 10.2px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .grid-c1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
